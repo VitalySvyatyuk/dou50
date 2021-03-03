@@ -1,0 +1,24 @@
+/*body {*/
+/*    font-family: ;*/
+/*}*/
+
+.nav-text {
+    font-size: 12px;
+}
+
+.left-text {
+    font-size: 12px;
+}
+
+.left-img {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.bottom-img {
+    width: 19.4%;
+}
+
+.dropdown-item {
+    font-size: 13px;
+}

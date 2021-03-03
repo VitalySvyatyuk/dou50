@@ -1,0 +1,157 @@
+<!doctype html>
+{% load bootstrap5 static %}
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="{% block description %}{% endblock %}">
+  <title>{% block title %}{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <img src="{% static 'img/head_image.jpg' %}" style="width: 100%">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-text" aria-current="page" href="#">
+                    ГЛАВНАЯ
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    СВЕДЕНИЯ О МКДОУ №50
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="{% url 'about' %}">Основные сведения</a></li>
+                    <li><a class="dropdown-item" href="{% url 'struktura_upravlenia' %}"v>Структура управления</a></li>
+                    <li><a class="dropdown-item" href="{% url 'documenti' %}">Документы</a></li>
+                    <li><a class="dropdown-item" href="{% url 'obrazovanie' %}">Образование</a></li>
+                    <li><a class="dropdown-item" href="{% url 'obr_standarti' %}">Образовательные стандарты</a></li>
+                    <li><a class="dropdown-item" href="#">Руководство</a></li>
+                    <li><a class="dropdown-item" href="#">Материально-техническое обеспечение</a></li>
+                    <li><a class="dropdown-item" href="#">Виды материальной поддержки</a></li>
+                    <li><a class="dropdown-item" href="#">Платные услуги</a></li>
+                    <li><a class="dropdown-item" href="#">Финансово-хозяйственная деятельность</a></li>
+                    <li><a class="dropdown-item" href="#">Вакантные места</a></li>
+                    <li><a class="dropdown-item" href="#">Информация о договорах</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    РОДИТЕЛЯМ
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="{% url 'poryadok_priema_v_dou' %}">Порядок приема в ДОУ</a></li>
+                    <li><a class="dropdown-item" href="{% url 'roditelskaya_oplata' %}">Родительская оплата</a></li>
+                    <li><a class="dropdown-item" href="#">График комплектования</a></li>
+                    <li><a class="dropdown-item" href="#">Приказы о приеме и отчислении</a></li>
+                    <li><a class="dropdown-item" href="#">Комплектование</a></li>
+                    <li><a class="dropdown-item" href="#">Зачисление в ДОУ через интернет</a></li>
+                    <li><a class="dropdown-item" href="#">Советы медика</a></li>
+                    <li><a class="dropdown-item" href="#">Объявления</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    НАШИ ГРУППЫ
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Ссылка 1</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 2</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 3</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 4</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 5</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 6</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 7</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 8</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 9</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 10</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ПРОТИВОДЕЙСТВИЕ КОРРУПЦИИ
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Ссылка 1</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 2</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 3</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 4</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 5</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 6</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 7</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 8</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 9</a></li>
+                    <li><a class="dropdown-item" href="#">Ссылка 10</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-2 offset-md-1 pe-0">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Аттестация</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Питание</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Профсоюз</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Методический кабинет</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Защита персональных данных</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Наши достижения</a>
+        </div>
+        <a href="#">
+          <img src="{% static 'img/electronnaya_priemnaya.png' %}" class="left-img">
+        </a>
+        <a href="https://vmeste.stavregion.ru/dou" target="_blank">
+          <img src="{% static 'img/uchimsya_vmeste.png' %}" class="left-img">
+        </a>
+        <a href="https://растимдетей.рф" target="_blank">
+          <img src="{% static 'img/rastim_detey.png' %}" class="left-img">
+        </a>
+        <a href="https://regioninformburo.ru/category/obrazovanie/" target="_blank">
+          <img src="{% static 'img/novosti_regionov.png' %}" class="left-img">
+        </a>
+        <a href="#">
+          <img src="{% static 'img/antiterror.png' %}" class="left-img">
+        </a>
+        <a href="http://pravo.gov.ru" target="_blank">
+          <img src="{% static 'img/pravovoy_portal.png' %}" class="left-img">
+        </a>
+      </div>
+      {% block body %}
+      {% endblock %}
+      <div class="col-md-10 offset-md-1">
+        <a href="https://minobrnauki.gov.ru/" target="_blank">
+          <img src="{% static 'img/min_obrazovania.png' %}" class="bottom-img">
+        </a>
+        <a href="http://www.stavminobr.ru/" target="_blank">
+          <img src="{% static 'img/stav_min_obr.png' %}" class="bottom-img">
+        </a>
+        <a href="http://gorono26.ru" target="_blank">
+          <img src="{% static 'img/uo_pyatigorsk.png' %}" class="bottom-img">
+        </a>
+        <a href="http://obrnadzor.gov.ru" target="_blank">
+          <img src="{% static 'img/rosobrnadzor.png' %}" class="bottom-img">
+        </a>
+        <a href="https://26gosuslugi.ru" target="_blank">
+          <img src="{% static 'img/gos_uslugi_st_krai.png' %}" class="bottom-img">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
