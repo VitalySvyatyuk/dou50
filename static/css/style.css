@@ -22,3 +22,7 @@
 .dropdown-item {
     font-size: 13px;
 }
+
+p, li {
+    text-align: justify;
+}

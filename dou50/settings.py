@@ -14,7 +14,7 @@ SECRET_KEY = '2@4r4fv96)jx=#&m7gmj2xi7)shp1r0eedrkmiv_dh13$#noa#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dou50.ru', 'www.dou50.ru', 'localhost']
+ALLOWED_HOSTS = ['dou50.ru', 'www.dou50.ru', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -112,7 +112,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'static/'
+STATIC_ROOT = 'dist-static'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
