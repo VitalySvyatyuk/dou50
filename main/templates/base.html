@@ -56,7 +56,7 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="{% url 'poryadok_priema_v_dou' %}">Порядок приема в ДОУ</a></li>
                     <li><a class="dropdown-item" href="{% url 'roditelskaya_oplata' %}">Родительская оплата</a></li>
-                    <li><a class="dropdown-item" href="#">График комплектования</a></li>
+                    <li><a class="dropdown-item" href="{% url 'grafik_komplektovania' %}">График комплектования</a></li>
                     <li><a class="dropdown-item" href="#">Приказы о приеме и отчислении</a></li>
                     <li><a class="dropdown-item" href="#">Комплектование</a></li>
                     <li><a class="dropdown-item" href="#">Зачисление в ДОУ через интернет</a></li>
@@ -103,7 +103,7 @@
           </div>
         </nav>
       </div>
-      <div class="col-md-2 offset-md-1 pe-0">
+      <div class="col-md-2 order-3 order-md-1 offset-md-1 pe-sm-0">
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Аттестация</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-light left-text">Питание</a>
@@ -133,7 +133,7 @@
       </div>
       {% block body %}
       {% endblock %}
-      <div class="col-md-10 offset-md-1">
+      <div class="col-md-10 order-4 order-md-2 offset-md-1">
         <a href="https://minobrnauki.gov.ru/" target="_blank">
           <img src="{% static 'img/min_obrazovania.png' %}" class="bottom-img">
         </a>

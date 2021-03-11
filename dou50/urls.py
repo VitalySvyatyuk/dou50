@@ -13,6 +13,6 @@ urlpatterns = [
     path('documenti/', TemplateView.as_view(template_name='documenti.html'), name='documenti'),
     path('poryadok_priema_v_dou/', TemplateView.as_view(template_name='poryadok_priema_v_dou.html'), name='poryadok_priema_v_dou'),
     path('roditelskaya_oplata/', TemplateView.as_view(template_name='roditelskaya_oplata.html'), name='roditelskaya_oplata'),
+    path('grafik_komplektovania/', TemplateView.as_view(template_name='grafik_komplektovania.html'), name='grafik_komplektovania'),
     path('admin/', admin.site.urls),
-
 ]

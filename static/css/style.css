@@ -3,11 +3,11 @@
 /*}*/
 
 .nav-text {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .left-text {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .left-img {
@@ -16,7 +16,7 @@
 }
 
 .bottom-img {
-    width: 19.4%;
+    width: 19.3%;
 }
 
 .dropdown-item {
@@ -26,3 +26,12 @@
 p, li {
     text-align: justify;
 }
+
+.td-place {
+    text-align: center;
+}
+
+th, td {
+    font-size: 13px;
+}
+

@@ -2,6 +2,7 @@
 
 #### ToDo:
 - register yandex.metrika
-- add letsencrypt certificate 
 - create contact form
 - add page404
+- version for visually impaired
+ 
