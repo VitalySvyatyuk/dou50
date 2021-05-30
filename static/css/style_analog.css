@@ -1,0 +1,16 @@
+.nav-text, .left-text, .dropdown-item, th, td, a, p {
+    font-size: 18px;
+    color: black !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bg-warning {
+    background-color: white !important;
+}
+
+img {
+    display: none;
+}

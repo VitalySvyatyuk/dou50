@@ -1,6 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path
+from main.views import AnalogView
 
 from django.views.generic.base import TemplateView
 
@@ -14,5 +15,9 @@ urlpatterns = [
     path('poryadok_priema_v_dou/', TemplateView.as_view(template_name='poryadok_priema_v_dou.html'), name='poryadok_priema_v_dou'),
     path('roditelskaya_oplata/', TemplateView.as_view(template_name='roditelskaya_oplata.html'), name='roditelskaya_oplata'),
     path('grafik_komplektovania/', TemplateView.as_view(template_name='grafik_komplektovania.html'), name='grafik_komplektovania'),
+    path('stipendii/', TemplateView.as_view(template_name='stipendii.html'), name='stipendii'),
+    path('rukovodstvo/', TemplateView.as_view(template_name='rukovodstvo.html'), name='rukovodstvo'),
+
     path('admin/', admin.site.urls),
+    path('analog/', AnalogView.as_view(), name='analog')
 ]

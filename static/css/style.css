@@ -1,26 +1,10 @@
-/*body {*/
-/*    font-family: ;*/
-/*}*/
-
-.nav-text {
-    font-size: 13px;
-}
-
-.left-text {
+.nav-text, .left-text, .dropdown-item, th, td {
     font-size: 13px;
 }
 
 .left-img {
     width: 100%;
     border: 1px solid lightgray;
-}
-
-.bottom-img {
-    width: 19.3%;
-}
-
-.dropdown-item {
-    font-size: 13px;
 }
 
 p, li {
@@ -31,7 +15,14 @@ p, li {
     text-align: center;
 }
 
-th, td {
-    font-size: 13px;
+.version {
+    font-size: 16px;
 }
 
+.rukovodst {
+    font-size: 16px;
+}
+
+.rukovodst-table {
+    border: 1px solid black;
+}

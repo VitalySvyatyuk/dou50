@@ -4,5 +4,3 @@
 - register yandex.metrika
 - create contact form
 - add page404
-- version for visually impaired
- 
