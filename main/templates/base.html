@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="{% block description %}{% endblock %}">
   <title>{% block title %}{% endblock %}</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   {% if request.session.analog %}
     <link rel="stylesheet" href="{% static 'css/style_analog.css' %}">
@@ -53,8 +53,8 @@
                     <li><a class="dropdown-item" href="#">Платные услуги</a></li>
                     <li><a class="dropdown-item" href="#">Финансово-хозяйственная деятельность</a></li>
                     <li><a class="dropdown-item" href="#">Вакантные места</a></li>
-                    <li><a class="dropdown-item" href="#">Доступная среда</a></li>
-                    <li><a class="dropdown-item" href="#">Международное сотрудничество</a></li>
+                    <li><a class="dropdown-item" href="{% url 'dostupnaya_sreda' %}">Доступная среда</a></li>
+                    <li><a class="dropdown-item" href="{% url 'mezhdunarodnoe' %}">Международное сотрудничество</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -211,6 +211,6 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

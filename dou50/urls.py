@@ -17,6 +17,8 @@ urlpatterns = [
     path('grafik_komplektovania/', TemplateView.as_view(template_name='grafik_komplektovania.html'), name='grafik_komplektovania'),
     path('stipendii/', TemplateView.as_view(template_name='stipendii.html'), name='stipendii'),
     path('rukovodstvo/', TemplateView.as_view(template_name='rukovodstvo.html'), name='rukovodstvo'),
+    path('dostupnaya_sreda/', TemplateView.as_view(template_name='dostupnaya_sreda.html'), name='dostupnaya_sreda'),
+    path('mezhdunarodnoe/', TemplateView.as_view(template_name='mezhdunarodnoe.html'), name='mezhdunarodnoe'),
 
     path('admin/', admin.site.urls),
     path('analog/', AnalogView.as_view(), name='analog')
